@@ -191,8 +191,6 @@ wget https://www.dropbox.com/s/w8kslfij7x15qbr/autobackup.sh > /dev/null 2>&1 &&
 /etc/init.d/cron restart > /dev/null 2>&1
 chmod 777 /var/www/html/admin/pages/apis/banco19157
 service apache2 restart
-sleep 1
-service apache2 restart
 clear
 echo ""
 #
