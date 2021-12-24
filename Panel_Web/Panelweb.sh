@@ -32,32 +32,8 @@ x="ok"
 menu ()
 {
 #PAINEL A INSTALAR
-panel_v10 () {
-wget https://raw.githubusercontent.com/CauaMarinhoSilva/install/main/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x Painel.sh; ./Painel.sh
-}
-#CLEAN FOLDER
-clean_folder () {
-echo ""
-fun_bar "apt-get update -y"
-fun_bar "apt-get upgrade -y"
-fun_bar "service ssh restart"
-##LIMPIA FILES
-rm -rf $HOME/install*
-rm -rf $HOME/install.sh*
-rm -rf $HOME/ocspanel*
-rm -rf $HOME/Painel.sh*
-rm -rf $HOME/Painelv11.sh*
-rm -rf $HOME/banco.sql*
-rm -rf $HOME/BD-Painel-v23.sql*
-rm -rf $HOME/sshplus.sql*
-rm -rf $HOME/bd-v15.sql*
-rm -rf $HOME/ssh.sql*
-rm -rf $HOME/plus.sql*
-rm -rf $HOME/Panelweb.sh* > /dev/null 2>&1; wget https://raw.githubusercontent.com/CauaMarinhoSilva/install/main/Panel_Web/Panelweb.sh > /dev/null 2>&1
-echo ""
-echo -e "\033[1;33m CLEAN FOLDER COM SUCESSO -\033[1;32m OK !\033[1;37m"
-sleep 4s
-chmod +x Panelweb.sh; ./Panelweb.sh
+panel_c1 () {
+wget https://raw.githubusercontent.com/plusc1-caua/install/main/Panel_Web/panel_v25/install > /dev/null 2>&1; chmod +x Painel.sh; ./Painel.sh
 }
 #PANIL REMOVE
 remove_panel () {
@@ -87,7 +63,7 @@ fun_bar "apt-get upgrade -y"
 fun_att () {
     service ssh restart > /dev/null 2>&1
     rm -rf $HOME/Panelweb.sh* > /dev/null 2>&1
-    wget https://raw.githubusercontent.com/CauaMarinhoSilva/install/main/Panel_Web/Panelweb.sh > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/plusc1-caua/install/main/Panel_Web/Panelweb.sh > /dev/null 2>&1
 }
 fun_bar 'fun_att'
 echo ""
@@ -105,14 +81,13 @@ _usor=$(printf '%-8s' "$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')")
 _usop=$(printf '%-1s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37mINSTALL PAINEL REVENDA SSH       \033[1;32m[\033[1;37m  VERSAO: r002 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37m       INSTALAR PAINEL SSH       \033[1;32m[\033[1;37m  VERSAO: r002 \033[1;32m]\E[0m"
 echo -e "$barra"
 echo ""
-echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mPAINEL REVENDA SSH V10       \033[1;31m(ANT) "
-echo -e "\033[1;31m[\033[1;36m14\033[1;31m] \033[1;37m• \033[1;33mCLEAN FOLDER                 \033[1;36m(\033[1;31mINESTABLE\033[1;36m) \033[1;37m• "
-echo -e "\033[1;31m[\033[1;36m15\033[1;31m] \033[1;37m• \033[1;33mPAINEL REMOVE                \033[1;36m(\033[1;31mINESTABLE\033[1;36m) \033[1;37m• "
-echo -e "\033[1;31m[\033[1;36m16\033[1;31m] \033[1;35m[!] \033[1;32mACTUALIZAR                \033[1;31mRam:\033[1;37m $_usor "
-echo -e "\033[1;31m[\033[1;36m17\033[1;31m] \033[1;35m[!] \033[1;31mDESINSTALAR \033[1;35m[\033[1;37m IPW \033[1;35m]       \033[1;31mNucleo:\033[1;37m $_usop "
+echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mPAINEL SSH C1-PLUS       \033[1;31m(NOVO) "
+echo -e "\033[1;31m[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mREMOVE MYSQL                \033[1;36m\033[1;31m\033[1;36m \033[1;37m• "
+echo -e "\033[1;31m[\033[1;36m03\033[1;31m] \033[1;35m[!] \033[1;32mATUALIZAR                \033[1;31mRam:\033[1;37m $_usor "
+echo -e "\033[1;31m[\033[1;36m04\033[1;31m] \033[1;35m[!] \033[1;31mLIMPAR CACHE \033[1;35m\033[1;37m \033[1;35m       \033[1;31mNucleo:\033[1;37m $_usop "
 echo -e "\033[1;31m[\033[1;36m00\033[1;31m] \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m< \033[0m"
 echo -e "                           \033[1;37m@Universe_say\033[0m \033[0m"
 echo -e "$barra"
@@ -122,30 +97,20 @@ echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read
 case "$x" in 
 1 | 01)
 clear
-panel_v10
+panel_c1
 exit;
 ;;
-13)
-clear
-panel_update2325
-exit;
-;;
-14)
-clear
-clean_folder
-exit;
-;;
-15)
+2 | 02)
 clear
 remove_panel
 exit;
 ;;
-16)
+3 | 03)
 clear
 atualizar
 exit;
 ;;
-17)
+4 | 04)
 clear
 remove_multiscripts
 exit;
