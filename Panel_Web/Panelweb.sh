@@ -81,15 +81,15 @@ _usor=$(printf '%-8s' "$(free -m | awk 'NR==2{printf "%.2f%%", $3*100/$2 }')")
 _usop=$(printf '%-1s' "$(top -bn1 | awk '/Cpu/ { cpu = "" 100 - $8 "%" }; END { print cpu }')")
 clear
 echo -e "$barra"
-echo -e "\E[41;1;37m       INSTALAR PAINEL SSH       \033[1;32m[\033[1;37m  VERSAO: r002 \033[1;32m]\E[0m"
+echo -e "\E[41;1;37m       INSTALAR PAINEL SSH       \033[1;32m[\0331;37m\033[1;32m\E[0m"
 echo -e "$barra"
 echo ""
-echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mPAINEL C1 PLUS       \033[1;31m"
-echo -e "\033[1;31m[\033[1;36m02\033[1;31m] \033[1;37m• \033[1;33mREMOVE MYSQL                \033[1;36m\033[1;31m"
-echo -e "\033[1;31m[\033[1;36m03\033[1;31m] \033[1;35m[!] \033[1;32mATUALIZAR                \033[1;31mRam:\033[1;37m $_usor "
-echo -e "\033[1;31m[\033[1;36m04\033[1;31m] \033[1;35m[!] \033[1;31mLIMPAR CACHE \033[1;35m\033[1;37m \033[1;35m       \033[1;31mNucleo:\033[1;37m $_usop "
-echo -e "\033[1;31m[\033[1;36m00\033[1;31m] \033[1;37mSALIR \033[1;32m<\033[1;33m<\033[1;31m< \033[0m"
-echo -e "                           \033[1;37m@Universe_say\033[0m \033[0m"
+echo -e "[01] • PAINEL C1 PLUS <br>"
+echo -e "[02] • REMOVER MYSQL<br>"
+echo -e "[03] • ATUALIZAR • Ram:\033[1;37m $_usor "
+echo -e "[04] • LIMPAR CACHE • Nucleo: [1;37m $_usop "
+echo -e "[00] • SAIR"
+echo -e "• [1;32mCriador:\033 @Universe_say"
 echo -e "$barra"
 echo ""
 echo -ne "\033[1;32mOQUE DESEJA FAZER \033[1;33m?\033[1;31m?\033[1;37m : "; read x
