@@ -35,8 +35,8 @@ iptables -A INPUT -p tcp --dport 8080 -j ACCEPT
 iptables -A INPUT -p tcp --dport 1194 -j ACCEPT
 clear && echo -ne "\033[1;32mDigite sua nova senha root\033[1;37m: "; read senha
 [[ -z "$senha" ]] && {
-echo -e "\n\033[1;31mCalma barboleta, vê se não erra de novo\033[0m"
+echo -e "\n\033[1;31mCalma, vê se não erra de novo\033[0m"
 exit 0
 }
 echo "root:$senha" | chpasswd
-echo -e "\n\033[1;31m[ \033[1;33mVai brasiliam \033[1;31m]\033[1;37m - \033[1;32magora o bicho vai pegar \033[0m"
+echo -e "\n\033[1;31m[ \033[1;33mALTERADO COM SUCESSO\033[1;31m]\033[1;37m - \033[1;32 Ao acessar o servidor, use a senha inserida acima. \033[0m"
