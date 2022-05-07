@@ -1,3 +1,4 @@
+#!/bin/bash
 fun_conexao() {
 [[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@CRAZY_VPN" ]] && {
 	ram1=$(free -h | grep -i mem | awk {'print $2'})
@@ -1924,5 +1925,5 @@ exit 0' >$RCLOCAL
 		done
 	}
    }
-	fun_conexao
 }
+fun_conexao
