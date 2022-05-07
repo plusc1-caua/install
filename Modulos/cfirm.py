@@ -19,14 +19,14 @@ _HORA_ = str(_DATA_.hour)
 _MINUTO_ = str(_DATA_.minute)
 _SEGUNDO_ = str(_DATA_.second)
 _MSG_ = MIMEMultipart('alternative')
-_MSG_['Subject'] = "INSTALACAO DO SSHPLUS"
-_MSG_['From'] = 'crzvpn@gmail.com'
-_MSG_['To'] = 'crzvpn@gmail.com'
+_MSG_['Subject'] = "INSTALACAO DO UNIVERSE SAY"
+_MSG_['From'] = 'Universe_say@gmail.com'
+_MSG_['To'] = 'Universe_say@gmail.com'
 _TEXTO_ = """\
 <html>
 <head></head>
 <body>
-<b><i>Ola! Crazy</i></b>
+<b><i>Ola! Universe_say</i></b>
 <br></b>
 <b><i>SEU SCRIPT FOI INSTALADO EM UM VPS<i></b>
 <br></br>
