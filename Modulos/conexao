@@ -1,11 +1,4 @@
-#!/bin/bash
-#====================================================
-#	SCRIPT: CONEXAO SSHPLUS MANAGER
-#	DESENVOLVIDO POR:	UNIVERSE SAY
-#	DATA ATUALIZACAO:	28-04-2021 
-#	CONTATO TELEGRAM:	http://t.me/Universe_say
-#	CANAL TELEGRAM:	http://t.me/Universe_say
-#====================================================
+fun_conexao() {
 [[ $(awk -F" " '{print $2}' /usr/lib/licence) == "@CRAZY_VPN" ]] && {
 	ram1=$(free -h | grep -i mem | awk {'print $2'})
 	ram2=$(free -h | grep -i mem | awk {'print $4'})
@@ -1930,5 +1923,6 @@ exit 0' >$RCLOCAL
 			esac
 		done
 	}
+   }
 	fun_conexao
 }
