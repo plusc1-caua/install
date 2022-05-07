@@ -365,6 +365,7 @@ case "$x" in
    ;;
    10)
    conexao
+   exit;
    ;;
    11)
    clear
