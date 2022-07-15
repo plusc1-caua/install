@@ -6,7 +6,6 @@
   "UrlContato": "https://www.speedtest.net/pt",
   "UrlTermos": "http://site.evpnconnect.xyz/suporte/",
   "CheckUser": "true",
-   "CheckUser": "true",
    "Udp": [
     {
       "Porta": "7300"
