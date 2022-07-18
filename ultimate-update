@@ -1,6 +1,6 @@
 {
-  "Version": "1.0.1",
-  "ReleaseNotes": "Atualização disponível. Atualizado: 14/07/2022 - Versão: 1.0.1",
+  "Version": "1.0.2",
+  "ReleaseNotes": "Atualização disponível. Atualizado: 18/07/2022 - Versão: 1.0.2",
   "UrlUpdate": "https://raw.githubusercontent.com/plusc1-caua/install/main/ultimate-update",
   "EmailFeedback": "",
   "UrlContato": "https://www.speedtest.net/pt",
@@ -119,6 +119,26 @@
       "Payload": "GET wss://whiyccqz.tk/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
       "SNI": "whiyccqz.tk",
       "TlsIP": "104.21.11.51",
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "🟣VIVO NOVO 04🟣",
+      "FLAG": "vivo",
+      "Payload": "GET wss://rapehun.com/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "rapehun.com",
+      "TlsIP": "rapehun.com,
+      "ProxyIP": "",
+      "ProxyPort": "443",
+      "Info": "Tlsws"
+   },
+    {
+      "Name": "🟣VIVO NOVO 05🟣",
+      "FLAG": "vivo",
+      "Payload": "GET wss://fitality.gr/ HTTP/1.1[crlf]Host: [app_host][crlf]Upgrade: websocket[crlf]Connection: Keep-Alive[crlf][crlf]",
+      "SNI": "fitality.gr",
+      "TlsIP": "fitality.gr",
       "ProxyIP": "",
       "ProxyPort": "443",
       "Info": "Tlsws"
